@@ -2,7 +2,6 @@ window.onload = mostrarHora;
 
 function mostrarHora(){
     let rellotge = document.getElementById("rellotge");
-    let informacio = document.getElementById("informacio");
     let missatge = document.getElementById("missatge");
 
     let data = new Date();
@@ -17,7 +16,6 @@ function mostrarHora(){
     segonsMostrar = (segons < 10) ? ("0" + segons) : segons;
   
     rellotge.innerHTML= "Són les " + horesMostrar + ":" + minutsMostrar + ":" + segonsMostrar;
-    informacio.innerHTML= "hores  = " + hores + "<br>minuts = " + minuts + "<br>segons = " + segons ;
     if (hores >= 7 && hores < 14){
       missatge.innerHTML = "Bon dia!";  
     }else if (hores >= 14 && hores < 18){
@@ -30,7 +28,7 @@ function mostrarHora(){
 }
 
 function amagaMostraInfo(){
-    let elementAAmagar = document.getElementById("informacio");
+    let elementAAmagar = document.getElementById("missatge");
   let mostra = document.getElementById("amaga_mostra");
   if (elementAAmagar.style.display === "none") {
     elementAAmagar.style.display = "block";
