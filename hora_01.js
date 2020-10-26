@@ -1,5 +1,5 @@
 window.onload = mostraHora;
-
+//HOLA
 function mostraHora(){
   let rellotge = document.getElementById("rellotge");
   let informacio = document.getElementById("informacio");
